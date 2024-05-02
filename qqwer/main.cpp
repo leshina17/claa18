@@ -57,7 +57,7 @@ class C: public B{
 };
 
 int main(){
-    A a=B(10);
+    A a=B(10);//так можно
     //B b=B(10);
     C c;
 
