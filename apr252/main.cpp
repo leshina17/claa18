@@ -80,7 +80,10 @@ class animal{
     public: 
 };
 
+virtual
+
 int main(){
+    
     
 // cat cat("alisa ");
 // dog dog("pulya ");
