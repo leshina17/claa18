@@ -80,7 +80,16 @@ class animal{
     public: 
 };
 
-virtual
+//virtual
+
+class device{
+    public:
+    device(){
+        std::cout << "device constructor" << std::endl;
+    }
+};
+
+class monitor: public device
 
 int main(){
     
@@ -93,6 +102,14 @@ int main(){
     // b elem_b;
     // a ab=b(); //переменная ав из класса а, но создается с помощью конструктора в обратно такое нельзя ( в ва=а()) В КОМПОЗИЦИИ ТАКОГО НЕЛЬЗЯ
     // a* aa=new a[5]{};
+
+
+
+    //дописать
+
+animal** zoo=new animal*[2]{&cat, &dog};
+process(zoo*[0]);
+process (zoo*[1]);
 
     return 0;
 }
